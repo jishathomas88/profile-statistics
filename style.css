@@ -1,0 +1,45 @@
+body{
+    margin:0;
+    background-color: yellow;
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+}
+.statistics-container{
+    margin:20px;
+    border:1px dotted lightgreen;
+    min-width:200px;
+    height:100px;
+    position: relative;
+    padding:20px;
+}
+.statistics-container i{
+    position:absolute;
+    top: -30px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.statistics-container div{
+    position: absolute;
+    color: green;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+}
+.statistics-container h4{
+    position:absolute;
+    bottom:1px;
+    left:50%;
+    transform: translateX(-50%);
+    white-space:nowrap;
+    font-family: cursive;
+}
+
+
+
+@media ( max-width: 600px) {
+   body{
+    flex-direction: column;
+   } 
+}
